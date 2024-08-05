@@ -1,0 +1,320 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    background-color: #082e5c;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+.card {
+    box-shadow: 0 5px 5px #00000073;
+    background-color: #ffe5b4;
+    color: black;
+}
+
+@keyframes githubAnimacao {
+    0% {
+        opactiy: 0;
+    }
+    100% {
+        opacity: 1;
+        margin-right: 0;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes linkedinAnimacao {
+    0% {
+        opactiy: 0;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 0;
+        transform: rotate(0deg);
+    }
+}
+
+.github {
+    animation: 0.5s githubAnimacao;
+    animation-fill-mode: forwards;
+    opacity: 1;
+    margin-right: 100px;
+}
+
+.github>svg{
+    animation: 0.5s githubAnimacao;
+    animation-fill-mode: forwards;
+    transform: rotate(45deg);
+}
+
+.linkedin {
+    animation: 0.5s linkedinAnimacao;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    margin-left: 100px;
+}
+
+.linkedin>svg{
+    animation: 0.5s linkedinAnimacao;
+    animation-fill-mode: forwards;
+    transform: rotate(45deg);
+}
+
+.rede-social:hover{
+    color: #ffe5b4;
+    transition: 0.5s ease;
+}
+
+@keyframes titleAnimacao {
+    0% {
+        opactiy: 0;
+    }
+    100% {
+        opacity: 1;
+        margin-right: 0;
+        margin-left: 0;
+        transform: rotate(0deg);
+    }
+}
+
+.header-title{
+    opacity: 0;
+    animation: 0.5s titleAnimacao;
+    animation-fill-mode: forwards;
+    margin-right: 400px;
+    transform: rotate(-20deg);
+}
+
+.header-subtitle {
+    opacity: 0;
+    animation: 0.5s titleAnimacao;
+    margin-left: 400px;
+    transform: rotate(20deg);
+    animation-fill-mode: forwards;
+}
+
+@keyframes navigationAnimacao {
+    0% {
+        opactiy: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.navigation {
+    opacity: 0;
+    animation: 0.5s navigationAnimacao;
+    animation-fill-mode: forwards;
+}
+
+.navigation li {
+    border: 1px solid white;
+}
+
+.nav-item:hover {
+    color: #082e5c;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-item{
+    padding-right: 30px;
+    padding-left: 30px;
+
+}
+
+@keyframes navFixaAnimacao {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hideNavBar {
+    from {
+        opacity: 1;
+        top: 1vh;
+    }
+    to {
+        opacity: 0;
+        top: -6vh;
+    }
+}
+
+.hide-fixed-navbar {
+    opacity: 1;
+    animation: 0.5s ease hideNavBar forwards;
+}
+
+.show-fixed-navbar {
+    animation: 0.5s ease navFixaAnimacao forwards;
+}
+
+.fixed-navbar {
+    opacity: 0;
+}
+
+.navigation-mobile-container {
+    background-color: #082e5c;
+    height: 105vh;
+    z-index: 999;
+    padding-top: 5vh;
+    top: 0vh;
+}
+
+.navigation-mobile {
+    top: -2.5vh;
+    height: 12.5vh;
+    width: 100%;
+    z-index: 9999;
+}
+
+.fixed-nav-item {
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: white;
+    color: #082e5c;
+    border: 1px solid ;
+}
+
+.fixed-nav-item:hover {
+    cursor: pointer;
+    background-color: #082e5c;
+    color: white;
+    transition: 0.5s;
+}
+
+@keyframes showNavigationFixed {
+    from{
+        top: -6vh;
+    }
+    to{
+        top: 1vh;
+    }
+}
+
+.show-navigation-fixed {
+    animation: 0.5s ease showNavigationFixed forwards;
+}
+
+.navigation-fixed {
+    top: -6vh;
+}
+
+.navigation-fixed li {
+    border: 1px solid #082e5c;
+}
+
+@keyframes navbarOpen {
+    from {
+        top: -5vh;
+    }
+    to {
+        top: 1vh;
+    }
+}
+
+.icon-navbar-mobile-close {
+    animation: 0.5s ease navbarOpen forwards;
+}
+
+.icon-navbar-mobile-open {
+    animation: 0.5s ease navbarOpen forwards;
+}
+
+.icon-navbar-mobile-bar-hide {
+    display: none;
+}
+
+@keyframes drawerOpen {
+    from {
+        opactiy: 0;
+    }
+    to {
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+
+
+.drawer {
+    display: none;
+}
+
+.drawer-open {
+    animation: 0.5s drawerOpen forwards;
+    margin-left: -300px;
+    left: 0;
+}
+
+.blur-content {
+    filter: blur(5px);
+    animation: 0.5s ease;
+}
+
+@keyframes drawerClose {
+    from {
+        opacity: 1;
+        margin-left: 0px;
+    }
+    to {
+        margin-left: -400px;
+        opacity: 0;
+    }
+}
+
+.drawer-close {
+    background-color: #082e5c;
+    animation: 0.5s drawerClose forwards;
+    margin-left: -300px;
+    top: 1vh;
+    left: 0;
+    height: 105vh;
+    z-index: 999;
+}
+
+.navigation-mobile li.nav-item {
+    border-bottom: 1px solid white;
+    padding: 25px;
+}
+
+@keyframes navItemAnimation{
+    100%{
+        opacity: 1;
+    }
+}
+
+.nav-animations-startup > li:first-child{
+    animation: 0.2s navItemAnimation forwards;
+    opacity: 0;
+}
+
+.nav-animations-startup > li:nth-child(2){
+    animation: 0.4s navItemAnimation forwards;
+    opacity: 0;
+}
+
+.nav-animations-startup > li:nth-child(3){
+    animation: 0.6s navItemAnimation forwards;
+    opacity: 0;
+}
+
+.nav-animations-startup > li:nth-child(4){
+    animation: 0.8s navItemAnimation forwards;
+    opacity: 0;
+}
+
+.nav-animations-startup > li:nth-child(5){
+    animation: 1s navItemAnimation forwards;
+    opacity: 0;
+}
+
+.shadow-icon {
+    filter: drop-shadow(2px 4px 6px rgb(0, 0, 0));
+}
