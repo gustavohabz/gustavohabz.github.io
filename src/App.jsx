@@ -3,16 +3,14 @@ import { RedesSociais } from './components/RedesSociais'
 import { Header } from './components/Header'
 import { Experiencias } from './components/Experiencias'
 import { LinhaSeparadora } from './components/LinhaSeparadora'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect, useRef, useState } from 'react'
 import { Sobre } from './components/Sobre'
 import { Navbar } from './components/Navbar'
 import { NavbarFixa } from './components/NavbarFixa'
-import { faDatabase, faGlobe, faGlobeAmericas, faLanguage, faLeaf, faWrench } from '@fortawesome/free-solid-svg-icons'
-import { faAngular, faCss3, faHtml5, faJava, faJs, faReact, faVuejs } from '@fortawesome/free-brands-svg-icons'
 import { Habilidades } from './components/Habilidades'
 import { Formacao } from './components/Formacao'
 import { Rodape } from './components/Rodape'
+import { useTranslation } from 'react-i18next'
 
 function App() {
     const [isIntersecting, setIsIntersecting] = useState(false);
@@ -37,6 +35,8 @@ function App() {
         observer.observe(refHeader.current);
         return () => observer.disconnect();
     }, [])
+    
+    const { t } = useTranslation();
 
     return (
         <main ref={refHome}>
@@ -66,7 +66,7 @@ function App() {
                 </section>
                 <LinhaSeparadora />
                 <section>
-                    <h2 ref={refSobre} className="text-3xl text-center mb-32">Sobre Mim</h2>
+                    <h2 ref={refSobre} className="text-3xl text-center mb-32">{ t('sobre_mim') }</h2>
                     <Sobre />
                 </section>
                 <LinhaSeparadora />

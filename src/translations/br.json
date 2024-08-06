@@ -1,0 +1,17 @@
+{
+    "translation": 
+    {
+        "inicio": "Início",
+        "sobre": "Sobre",
+        "experiencia": "Experiência",
+        "habilidades_e_idiomas": "Habilidades e Idiomas",
+        "formacao": "Formação",
+        "sobre_mim": "Sobre Mim",
+        "desenvolvedor_web": "Desenvolvedor Web",
+        "desenvolvedor_web_full_stack": "Desenvolvedor Web Full-Stack",
+        "sobre_texto_1_1": "Tenho",
+        "sobre_texto_1_2": " anos, atualmente curso faculdade de análise e desenvolvimento de sistemas, gosto de estudar ferramentas de desenvolvimento web como frameworks, bibliotecas e linguagens de programação, continuo estudando a área constantemente e estou disposto sempre a aprender mais.",
+        "sobre_texto_2": "Minha área de estudos e interesses está focada em desenvolvimento web, tenho cerca de 6 anos de experiência no mercado de trabalho. Nesse período desenvolvi habilidades como: construção de telas com HTML, CSS e JavaScript puro ou frameworks, construção de queries MySQL, conceitos de UI para construção de telas harmoniosas, metodo de trabalho Kanban.",
+        "sobre_texto_3": "Meus atributos pessoais são: proatividade, compromisso com entregas, minuciosidade, comunicação boa com colegas de trabalho."
+    }
+}

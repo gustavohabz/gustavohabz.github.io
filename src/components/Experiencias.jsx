@@ -37,26 +37,19 @@ export const Experiencias = () => {
     }, [])
 
   return (
-    <div className="flex flex-col space-y-12">
+    <div className="timeline relative" style={{zIndex: '-1'}}>
         {experiencias.map((experiencia, index) => (
             <div 
-                key={index}
-                className='card rounded-lg pt-12 pl-6 pr-6 pb-12 sm:p-12'
-            >
-                <div className="float-left">
-                    <h3 className="text-3xl mb-2">{experiencia.titulo}</h3>
-                    <small>{experiencia.cargo}</small>
-                </div>
-                <div className='float-right'>
-                    <h3 className="text-lg">{experiencia.local}</h3>
-                    <h3 className="text-1xl">{experiencia.dataInicio} - {experiencia.dataFim}</h3>
-                </div>
-                <div className="float-left mt-4">
-                    <ul className="list-disc text-sm">
+                className={"timeline-container "+(index % 2 ? 'right' : 'left')}
+                key={index}>
+                <div className="content">
+                    <h2 className="text-4xl">{experiencia.titulo}</h2>
+                    <h2 className="text-2xl mb-6">{experiencia.dataInicio} - {experiencia.dataFim}</h2>
+                    <h2 className="text-xl mb-4">{experiencia.cargo}</h2>
+                    <hr />
+                    <ul className="list-disc text-justify hyphens-auto text-sm p-4">
                         {experiencia.atribuicoes.map((atribuicao, indexAtribuicao) => (
-                            <li key={indexAtribuicao} className="mb-2">
-                                <p className="indent-2 text-justify hyphens-auto">{atribuicao}</p>
-                            </li>
+                            <li key={indexAtribuicao}>{atribuicao}</li>
                         ))}
                     </ul>
                 </div>

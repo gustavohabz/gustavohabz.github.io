@@ -28,22 +28,52 @@ export const Habilidades = () => {
             <div className="mt-6 mb-6">
                 <hr/>
             </div>
-            <div className="p-12">
-                <p className="text-xl text-center">
-                    <FontAwesomeIcon className="text-html5" icon={faHtml5} /> HTML 5 &nbsp; | &nbsp;
-                    <FontAwesomeIcon className="text-css3" icon={faCss3} /> CSS 3 &nbsp; | &nbsp;
-                    <FontAwesomeIcon icon={faJs} /> JavaScript &nbsp; | &nbsp;
-                    Serverless &nbsp; | &nbsp;
-                    <FontAwesomeIcon style={{color: 'red'}} icon={faAngular} /> AngularJS &nbsp; | &nbsp;
-                    <FontAwesomeIcon style={{color: 'green'}} icon={faVuejs} /> Vue.js &nbsp; | &nbsp;
-                    <FontAwesomeIcon style={{color: 'cyan'}} icon={faReact} /> React &nbsp; | &nbsp;
-                    Next.js &nbsp; | &nbsp;
-                    Redux &nbsp; | &nbsp;
-                    <FontAwesomeIcon className="text-java" icon={faJava} /> Java &nbsp; | &nbsp;
-                    <FontAwesomeIcon style={{color: 'green'}} icon={faLeaf} /> Springboot &nbsp; | &nbsp;
-                    Hibernate &nbsp; | &nbsp;
-                    <FontAwesomeIcon style={{color: '#e34c00'}} icon={faDatabase} /> MySQL
-                </p>
+            <div className="p-12 text-xl">
+                <div className="flex flex-col sm:flex-row sm:text-center">
+                    <div className="mt-4 sm:mt-0 sm:w-1/3">
+                        <FontAwesomeIcon className="text-html5" icon={faHtml5} /> HTML 5
+                    </div>
+                    <div className="mt-4 sm:mt-0 sm:w-1/3">
+                        <FontAwesomeIcon className="text-css3" icon={faCss3} /> CSS 3
+                    </div>
+                    <div className="mt-4 sm:mt-0 sm:w-1/3">
+                        <FontAwesomeIcon icon={faJs} /> JavaScript
+                    </div>
+                </div>
+                <div className="flex flex-col sm:flex-row sm:mt-6">
+                    <div className="mt-4 sm:mt-0 sm:w-1/6">
+                        Serverless
+                    </div>
+                    <div className="mt-4 sm:mt-0 sm:w-1/6">
+                        <FontAwesomeIcon style={{color: 'red'}} icon={faAngular} /> AngularJS
+                    </div>
+                    <div className="mt-4 sm:mt-0 sm:w-1/6">
+                        <FontAwesomeIcon style={{color: 'green'}} icon={faVuejs} /> Vue.js
+                    </div>
+                    <div className="mt-4 sm:mt-0 sm:w-1/6">
+                        <FontAwesomeIcon style={{color: 'cyan'}} icon={faReact} /> React
+                    </div>
+                    <div className="mt-4 sm:mt-0 sm:w-1/6">
+                        Next.js
+                    </div>
+                    <div className="mt-4 sm:mt-0 sm:w-1/6">
+                        Redux
+                    </div>
+                </div>
+                <div className="flex flex-col sm:flex-row sm:text-center sm:mt-6">
+                    <div className="mt-4 sm:mt-0 sm:w-1/4">
+                        <FontAwesomeIcon className="text-java" icon={faJava} /> Java
+                    </div>
+                    <div className="mt-4 sm:mt-0 sm:w-1/4">
+                        <FontAwesomeIcon style={{color: 'green'}} icon={faLeaf} /> Springboot
+                    </div>
+                    <div className="mt-4 sm:mt-0 sm:w-1/4">
+                    Hibernate
+                    </div>
+                    <div className="mt-4 sm:mt-0 sm:w-1/4">
+                        <FontAwesomeIcon style={{color: '#e34c00'}} icon={faDatabase} /> MySQL
+                    </div>
+                </div>
             </div>
         </div>
     </div>

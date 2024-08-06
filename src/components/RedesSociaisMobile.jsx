@@ -2,18 +2,12 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faFileLines } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { downloadCurriculo } from '../downloadCurriculo'
-import { useTranslation } from 'react-i18next'
-import { useState } from 'react'
 
-export const RedesSociais = () => {
-
-    
-  const { t, i18n } = useTranslation()
-
+export const RedesSociaisMobile = () => {
   return (
-    <div className="flex flex-row sm:space-x-64 space-x-8 text-center">
+    <div className="flex flex-row space-x-2">
         <div className="basis-1/3">
-            <h1 className=" text-6xl sm:text-5xl">
+            <h1 className=" text-7xl ">
                 <a
                     href="https://github.com/gustavohabz"
                     target="_blank"
@@ -24,7 +18,7 @@ export const RedesSociais = () => {
             </h1>
         </div>
         <div className="basis-1/3">
-            <h1 className="text-6xl sm:text-5xl">
+            <h1 className="text-7xl">
                 <a
                     href="https://www.linkedin.com/in/gustavo-habitzreiter-b0b316135/"
                     target="_blank"
@@ -35,11 +29,11 @@ export const RedesSociais = () => {
             </h1>
         </div>
         <div className="basis-1/3">
-            <h1 className="text-6xl sm:text-5xl pr-4">
+            <h1 className="text-7xl">
                 <a
+                    onClick={downloadCurriculo}
                     target="_blank"
                     className="linkedin"
-                    onClick={() => downloadCurriculo(i18n.language)}
                 >
                     <FontAwesomeIcon icon={faFileLines} title="Abrir Currículo" className="rede-social" />
                 </a>

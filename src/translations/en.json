@@ -1,0 +1,17 @@
+{
+    "translation": 
+    {
+        "inicio": "Home",
+        "sobre": "About",
+        "experiencia": "Experiences",
+        "habilidades_e_idiomas": "Skills and Languages",
+        "formacao": "Education",
+        "sobre_mim": "About Me",
+        "desenvolvedor_web": "Web Developer",
+        "desenvolvedor_web_full_stack": "Full-Stack Web Developer",
+        "sobre_texto_1_1": " I am ",
+        "sobre_texto_1_2": " years old, i'm currently studying 'analysis and development of systems' at the university, i like to study web development tools such as frameworks, libraries and programming languages, i am constantly studying the area and i am always ready to learn more.",
+        "sobre_texto_2": "My area of study is mostly focused in web development, i have about 6 years of experience in the job market. During this period, i developed skills such as: creating website pages with HTML, CSS and pure JavaScript or with frameworks, MySQL query creation, UI concepts for construction of harmonious screens and Kanban.",
+        "sobre_texto_3": "My personal attributes are: proactivity, commitment to deadlines, thoroughness, good comunication with coworkers."
+    }
+}

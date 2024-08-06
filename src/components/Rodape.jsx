@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export const Rodape = () => {
   return (
-    <footer className="shadow-2xl mt-24 w-full shadow-3xl shadow-inner" style={{backgroundColor: 'rgb(8, 46, 102)'}}>
+    <footer className="mt-24 w-full shadow-3xl shadow-inner rodape">
         <p 
                 className="pt-6 pb-6 text-center"
             >
