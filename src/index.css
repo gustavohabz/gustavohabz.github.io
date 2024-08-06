@@ -168,7 +168,7 @@
 }
 
 .navigation-mobile-container {
-    background-color: #082e5c;
+    background-color: #224F86;
     height: 105vh;
     z-index: 999;
     padding-top: 5vh;
@@ -278,7 +278,6 @@
 }
 
 .drawer-close {
-    background-color: #082e5c;
     animation: 0.5s drawerClose forwards;
     margin-left: -300px;
     top: 1vh;

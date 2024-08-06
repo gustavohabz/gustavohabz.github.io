@@ -2,8 +2,10 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faFileLines } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { downloadCurriculo } from '../downloadCurriculo'
+import { useTranslation } from 'react-i18next'
 
 export const RedesSociaisMobile = () => {
+    const { t, i18n } = useTranslation()
   return (
     <div className="flex flex-row space-x-2">
         <div className="basis-1/3">
@@ -31,7 +33,7 @@ export const RedesSociaisMobile = () => {
         <div className="basis-1/3">
             <h1 className="text-7xl">
                 <a
-                    onClick={downloadCurriculo}
+                    onClick={() => downloadCurriculo(i18n.language)}
                     target="_blank"
                     className="linkedin"
                 >
