@@ -37,7 +37,7 @@ export const Sobre = () => {
                 { t('sobre_texto_3') }
             </p>
             <br />
-            <hr />
+            <hr className="border-black"/>
             <br />
             <h3 className="text-5xl mb-2">Stack</h3>
             <br />

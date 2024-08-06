@@ -46,7 +46,7 @@ export const Experiencias = () => {
                     <h2 className="text-4xl">{experiencia.titulo}</h2>
                     <h2 className="text-2xl mb-6">{experiencia.dataInicio} - {experiencia.dataFim}</h2>
                     <h2 className="text-xl mb-4">{experiencia.cargo}</h2>
-                    <hr />
+                    <hr className="border-black"/>
                     <ul className="list-disc text-justify hyphens-auto text-sm p-4">
                         {experiencia.atribuicoes.map((atribuicao, indexAtribuicao) => (
                             <li key={indexAtribuicao}>{atribuicao}</li>

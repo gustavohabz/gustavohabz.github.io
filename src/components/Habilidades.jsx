@@ -13,7 +13,7 @@ export const Habilidades = () => {
                 Idiomas <FontAwesomeIcon style={{color: '#002a5f'}} icon={faGlobeAmericas}/>
             </h1>
             <div className="mt-6 mb-6">
-                <hr/>
+                <hr className="border-black"/>
             </div>
             <div className="pt-12">
                 <p className="text-md text-center">
@@ -26,11 +26,11 @@ export const Habilidades = () => {
         >
             <h1 className="text-3xl text-center" >Linguagens e Frameworks <FontAwesomeIcon icon={faWrench} /> </h1>
             <div className="mt-6 mb-6">
-                <hr/>
+                <hr className="border-black"/>
             </div>
             <div className="p-12 text-xl">
                 <div className="flex flex-col sm:flex-row sm:text-center">
-                    <div className="mt-4 sm:mt-0 sm:w-1/3">
+                    <div className="sm:w-1/3">
                         <FontAwesomeIcon className="text-html5" icon={faHtml5} /> HTML 5
                     </div>
                     <div className="mt-4 sm:mt-0 sm:w-1/3">
