@@ -6,7 +6,7 @@ export const LanguageSwitcher = () => {
     const [enLang, setEnLang] = useLanguageHook();
 
   return (
-    <div className="switch inline-block">
+    <div className="switch inline-block top-2">
         <input 
             value={enLang}
             onChange={(e) => setEnLang(e.target.checked)}

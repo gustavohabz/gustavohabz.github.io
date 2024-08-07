@@ -22,6 +22,26 @@
         "descomplica": "Descomplica UniAmérica Centro Universitário",
         "descomplica_curso": "Análise e Desenvolvimento de Sistemas",
         "senai": "SENAI - Serviço Nacional de Aprendizagem Industrial",
-        "senai_curso": "Técnico em Informática, Desenvolvimento Web"
+        "senai_curso": "Técnico em Informática, Desenvolvimento Web",
+        "experiencia_1_titulo": "Conexão NF-e",
+        "experiencia_1_cargo": "Desenvolvedor Full-Stack",
+        "experiencia_1_local": "Joinville, SC",
+        "experiencia_1_dataInicio": "Jun 2019",
+        "experiencia_1_dataFim": "Jul 2024",
+        "experiencia_1_atribuicao1": "Desenvolvi e realizei manutenção de diversas telas em um sistema de gerenciamento de documentos fiscais com o framework AngularJS, aplicando conhecimentos de JS, HTML e CSS. Construí novas telas de listagens de documentos fiscais e telas de geração de relatórios de documentos fiscais, criei diversas landing pages para auxiliar no engajamento dos clientes, realizei manutenção em páginas que apresentavam bugs com o passar do tempo e implementei novas funcionalidades em páginas já consolidadas que passaram por mudanças na regra de negócio, também foram criei algumas páginas especiais que saiam um pouco do padrão do resto do sistema, como um sistema de compra automatizada onde o cliente faria o processo de aquisição de um plano quase sem precisar realizar contato com o suporte/time de vendas.",
+        "experiencia_1_atribuicao2":"Desenvolvi telas em conjunto com back-end utilizando Java, hibernate e MySQL, criando scripts e desenvolvendo código de back-end para telas de listagens, relatórios e outras telas específicas também como CRUDs.",
+        "experiencia_1_atribuicao3": "Realizei a atualização do projeto de backoffice do vue 2 para o vue 3 e atualizando o framework quasar para a versão mais moderna.",
+        "experiencia_1_atribuicao4": "Desenvolvi um sistema de backoffice, construí telas utilizando vue.js no front-end e Java, MySQL e hibernate no back-end, criei novas telas de listagens, geração de relatórios e formulários com informações de empresas, configurações de empresas e informações de usuários da própria ConexãoNF-e, auxiliando não só no gerenciamento interno da empresa, mas também no gerenciamento de contas de clientes.",
+        "experiencia_1_atribuicao5": "Criei e realizei manutenção das páginas de um website estático com HTML, CSS e alguns scripts JS, implementando novas landing pages de acordo com as demandas da empresa e apliquei mudanças de layout ou mudanças de regras de negócio que se aplicavam ao website.",
+        "experiencia_1_atribuicao6": "Realizei implementações com o serverless em um serviço de conexão com terceiros, conexões com RD Station, bots do slack ou serviços de captura de informações de usuários do sistema.",
+        "experiencia_1_atribuicao7": "Realizei manutenção de telas utilizando dos frameworks React.js e Next.js.",
+        "experiencia_2_titulo": "Imodi",
+        "experiencia_2_cargo": "Desenvolvedor Full-Stack",
+        "experiencia_2_local": "Joinville, SC",
+        "experiencia_2_dataInicio": "Out 2018",
+        "experiencia_2_dataFim": "Mai 2019",
+        "experiencia_2_atribuicao1": "Construí telas para um sistema de gerenciamento de imóveis utilizando de PHP, HTML e ajax.",
+        "experiencia_2_atribuicao2": "Desenvolvi scripts de web scrapping com python para coletar informações de imóveis em sites de empreendedoras e popular o banco de dados, tornando o trabalho menos manual possível.",
+        "experiencia_2_atribuicao3": "Desenvolvi o back-end de páginas novas e realizei manutenção em páginas antigas."
     }
 }

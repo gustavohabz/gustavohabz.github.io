@@ -22,6 +22,26 @@
         "descomplica": "Descomplica UniAmerica Universitary Center",
         "descomplica_curso": "Analysis and Systems Development",
         "senai": "SENAI - National Service of Industrial Learning",
-        "senai_curso": "Computer Technician, Web Development"
+        "senai_curso": "Computer Technician, Web Development",
+        "experiencia_1_titulo": "Conexão NF-e",
+        "experiencia_1_cargo": "Full Stack Developer",
+        "experiencia_1_local": "Joinville, SC - Brazil",
+        "experiencia_1_dataInicio": "Jun 2019",
+        "experiencia_1_dataFim": "Jul 2024",
+        "experiencia_1_atribuicao1": "I developed and maintained many pages for an invoice management system using the AngularJS framework, applying JavaScript, HTML and CSS knowledge. I built new invoice listing pages and landing pages to enhance client engagement. I performed maintenance on pages that had been experiencing bugs overtime, and implemented new functionalities on pages that were already established, but underwent changes in business rules. Additionaly, I created new special pages with unique layout and logic compared to the rest of the system, such as an auto-buying page that enabled clients to purchase the company’s plans without relying on the customer service team or contacting support.",
+        "experiencia_1_atribuicao2": "Developed screens in collaboration with backend using Java, Hibernate, and MySQL, creating scripts and backend code for listing screens, reports, and other specific screens such as CRUDs.",
+        "experiencia_1_atribuicao3": "Updated the back office project from Vue 2 to Vue 3 and upgraded the Quasar framework to the latest version.",
+        "experiencia_1_atribuicao4": "Developed a back office system, built screens using Vue.js on the frontend and Java, MySQL, and Hibernate on the backend, created new listing screens, report generation, and forms with company information, company settings, and user information from ConexãoNF-e itself, assisting not only in internal company management but also in customer account management.",
+        "experiencia_1_atribuicao5": "Created and maintained pages of a static website with HTML, CSS, and some JS scripts, implementing new landing pages as per company demands, and applied layout changes or business rule changes applicable to the website.",
+        "experiencia_1_atribuicao6": "Implemented functionalities with serverless in a third-party connection service, connections with RD Station, Slack bots, or services for capturing user information from the system.",
+        "experiencia_1_atribuicao7": "Maintained screens using React.js and Next.js frameworks",
+        "experiencia_2_titulo": "Imodi",
+        "experiencia_2_cargo": "Full Stack Developer",
+        "experiencia_2_local": "Joinville, SC - Brazil",
+        "experiencia_2_dataInicio": "Oct 2018",
+        "experiencia_2_dataFim": "May 2019",
+        "experiencia_2_atribuicao1": "I built screens for a real estate management system using PHP, HTML, and AJAX.",
+        "experiencia_2_atribuicao2": "Developed web scraping scripts with Python to gather property information from real estate websites and populate the database, minimizing manual work as much as possible.",
+        "experiencia_2_atribuicao3": "Developed backend for new pages and performed maintenance on old pages."
     }
 }

@@ -36,7 +36,7 @@ export const NavbarFixa = (props) => {
             className={'fixed-navbar ' + (!props.isIntersecting ? 'show-fixed-navbar' : 'hide-fixed-navbar')}
         >
             <nav className={"fixed top-5 w-full navigation-fixed text-center "  + (!props.isIntersecting ? 'show-navigation-fixed' : 'hide-fixed-navbar') }>
-                <ul className="hidden nav-breakpoint:block text-2xl">
+                <ul className="hidden nav-breakpoint:block text-xl">
                     <li 
                         className="inline fixed-nav-item p-4" 
                         onClick={() => props.refHome.current.scrollIntoView({behavior: 'smooth'})}
@@ -66,6 +66,9 @@ export const NavbarFixa = (props) => {
                         onClick={() => props.refFormacao.current.scrollIntoView({behavior: 'smooth'})}
                     >
                         { t('formacao') } <FontAwesomeIcon icon={faGraduationCap} className="ml-2"/>
+                    </li>
+                    <li className="inline">
+                        <LanguageSwitcher />
                     </li>
                 </ul>
             </nav>

@@ -131,7 +131,6 @@
 .nav-item{
     padding-right: 30px;
     padding-left: 30px;
-
 }
 
 @keyframes navFixaAnimacao {
@@ -215,10 +214,6 @@
     top: -6vh;
 }
 
-.navigation-fixed li {
-    border: 1px solid #082e5c;
-}
-
 @keyframes navbarOpen {
     from {
         top: -5vh;
@@ -289,6 +284,10 @@
 .navigation-mobile li.nav-item {
     border-bottom: 1px solid white;
     padding: 25px;
+}
+
+.navigation-mobile li..nav-lang-switcher {
+    border: 0px;
 }
 
 @keyframes navItemAnimation{
@@ -486,6 +485,10 @@
 
 .nav-mobile-item-animation-5 {
     animation: 0.6s linear navMobileItemAnimation forwards;
+}
+
+.navigation-fixed .fixed-nav-item {
+    border: 1px solid #082e5c;
 }
 
 .switch {

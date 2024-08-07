@@ -1,4 +1,4 @@
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { faFileLines } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { downloadCurriculo } from '../downloadCurriculo'
@@ -34,8 +34,19 @@ export const RedesSociais = () => {
                 </a>
             </h1>
         </div>
+        {/* <div className="basis-1/4">
+            <h1 className="text-6xl sm:text-5xl">
+                <a
+                    href="https://www.linkedin.com/in/gustavo-habitzreiter-b0b316135/"
+                    target="_blank"
+                    className="linkedin"
+                >
+                    <FontAwesomeIcon icon={faWhatsapp} />
+                </a>
+            </h1>
+        </div> */}
         <div className="basis-1/3">
-            <h1 className="text-6xl sm:text-5xl pr-4">
+            <h1 className="text-6xl sm:text-5xl">
                 <a
                     target="_blank"
                     className="linkedin"

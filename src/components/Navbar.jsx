@@ -9,7 +9,7 @@ export const Navbar = (props) => {
     <>
         <header ref={props.refHeader} className=" navigation mt-5 text-center navigation-desktop">
             <nav className="hidden nav-breakpoint:block">
-                <ul className="text-2xl nav-animations-startup">
+                <ul className="text-xl nav-animations-startup">
                     <li className="inline nav-item p-4" onClick={() => props.refHome.current.scrollIntoView({behavior: 'smooth'})}>
                         { t('inicio') } <FontAwesomeIcon icon={faHome} className="ml-2"/>
                     </li>
