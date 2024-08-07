@@ -1,9 +1,10 @@
 import { faLightbulb } from '@fortawesome/free-regular-svg-icons'
 import { faAward, faBars, faGraduationCap, faHome, faInfoCircle, faX } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { RedesSociaisMobile } from './RedesSociaisMobile'
 import { useTranslation } from 'react-i18next'
+import { LanguageSwitcher } from './LanguageSwitcher'
 import i18n from './../i18n'
 
 export const NavbarFixa = (props) => {
@@ -33,19 +34,6 @@ export const NavbarFixa = (props) => {
             setHiddenFixa(false)
         }, 1500);
     }, [])
-
-    const changeLanguage = (lang) => {
-        i18n.changeLanguage(lang)
-    }
-    const [enLang, setEnLang] = useState(false);
-    
-    useEffect(() => {
-        if(enLang){
-            changeLanguage("en")
-        } else {
-            changeLanguage("br")
-        }
-    }, [enLang])
 
     const { t } = useTranslation();
 
@@ -100,18 +88,7 @@ export const NavbarFixa = (props) => {
                     </p>
                 </div>
                 <div className={"absolute text-2xl navigation-mobile-container " + (drawerOpen ? 'drawer-open' : closeDrawer ? 'drawer-close' : 'drawer')}>
-                    <div className="switch inline-block">
-                        <input 
-                            value={enLang}
-                            onChange={(e) => setEnLang(e.target.checked)}
-                            id="langToggleNavFixa"
-                            type="checkbox" 
-                            className="check-toggle check-toggle-round-flat"
-                        />
-                        <label htmlFor="langToggleNavFixa"></label>
-                        <span className="on">BR</span>
-                        <span className="off">EN</span>
-                    </div>
+                    <LanguageSwitcher />
                     <ul>
                         <li 
                             className='text-3xl icon-navbar-mobile-open icon-navbar-mobile-close mb-6' 

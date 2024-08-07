@@ -2,29 +2,32 @@ import { faAngular, faCss3, faHtml5, faJava, faJs, faReact, faVuejs } from '@for
 import { faDatabase, faGlobeAmericas, faLeaf, faWrench } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 export const Habilidades = () => {
+    const { t } = useTranslation();
   return (
     <div className="flex space-y-6 flex-col sm:space-y-0 sm:flex-row sm:space-x-6">
         <div 
             className='card rounded-lg pt-12 pl-12 pr-12 sm:pb-0 pb-12 sm:mb-0 mb-12 sm:w-1/3'
         >
             <h1 className="text-2xl text-center" >
-                Idiomas <FontAwesomeIcon style={{color: '#002a5f'}} icon={faGlobeAmericas}/>
+                { t('idiomas') } <FontAwesomeIcon style={{color: '#002a5f'}} icon={faGlobeAmericas}/>
             </h1>
             <div className="mt-6 mb-6">
                 <hr className="border-black"/>
             </div>
             <div className="pt-12">
                 <p className="text-md text-center">
-                    Inglês Intermediário Avançado
+                    { t('ingles_intermediario_avancado') }
                 </p>
+                { t('portugues') && ( <p className="text-md mt-6 text-center" >{ t('portugues') }</p> )}
             </div>
         </div>
         <div 
             className='card rounded-lg p-12 sm:w-2/3'
         >
-            <h1 className="text-3xl text-center" >Linguagens e Frameworks <FontAwesomeIcon icon={faWrench} /> </h1>
+            <h1 className="text-3xl text-center" >{ t('linguagens_e_frameworks') } <FontAwesomeIcon icon={faWrench} /> </h1>
             <div className="mt-6 mb-6">
                 <hr className="border-black"/>
             </div>
@@ -40,23 +43,25 @@ export const Habilidades = () => {
                         <FontAwesomeIcon icon={faJs} /> JavaScript
                     </div>
                 </div>
-                <div className="flex flex-col sm:flex-row sm:mt-6">
-                    <div className="mt-4 sm:mt-0 sm:w-1/6">
+                <div className="flex flex-col sm:flex-row sm:mt-6 text-center">
+                    <div className="mt-4 sm:mt-0 sm:w-1/3">
                         Serverless
                     </div>
-                    <div className="mt-4 sm:mt-0 sm:w-1/6">
+                    <div className="mt-4 sm:mt-0 sm:w-1/3">
                         <FontAwesomeIcon style={{color: 'red'}} icon={faAngular} /> AngularJS
                     </div>
-                    <div className="mt-4 sm:mt-0 sm:w-1/6">
+                    <div className="mt-4 sm:mt-0 sm:w-1/3">
                         <FontAwesomeIcon style={{color: 'green'}} icon={faVuejs} /> Vue.js
                     </div>
-                    <div className="mt-4 sm:mt-0 sm:w-1/6">
+                </div>
+                <div className="flex flex-col sm:flex-row sm:mt-6 text-center">
+                    <div className="mt-4 sm:mt-0 sm:w-1/3">
                         <FontAwesomeIcon style={{color: 'cyan'}} icon={faReact} /> React
                     </div>
-                    <div className="mt-4 sm:mt-0 sm:w-1/6">
+                    <div className="mt-4 sm:mt-0 sm:w-1/3">
                         Next.js
                     </div>
-                    <div className="mt-4 sm:mt-0 sm:w-1/6">
+                    <div className="mt-4 sm:mt-0 sm:w-1/3">
                         Redux
                     </div>
                 </div>

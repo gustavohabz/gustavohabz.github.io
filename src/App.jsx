@@ -71,17 +71,17 @@ function App() {
                 </section>
                 <LinhaSeparadora />
                 <section>
-                    <h2 ref={refExperiencia} className="text-3xl text-center mb-32">Experiência</h2>
+                    <h2 ref={refExperiencia} className="text-3xl text-center mb-32">{ t('experiencia') }</h2>
                     <Experiencias />
                 </section>
                 <LinhaSeparadora />
                 <section>
-                    <h2 ref={refHabilidades} className="text-3xl text-center mb-32">Habilidades e Idiomas</h2>
+                    <h2 ref={refHabilidades} className="text-3xl text-center mb-32">{ t('habilidades_e_idiomas') }</h2>
                     <Habilidades />
                 </section>
                 <LinhaSeparadora />
                 <section>
-                    <h2 ref={refFormacao} className="text-3xl text-center mb-32">Formação</h2>
+                    <h2 ref={refFormacao} className="text-3xl text-center mb-32">{ t('formacao') }</h2>
                     <Formacao />
                 </section>
             </div>
