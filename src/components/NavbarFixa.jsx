@@ -10,7 +10,6 @@ import i18n from './../i18n'
 export const NavbarFixa = (props) => {
     const [drawerOpen, setDrawerOpen] = useState(false)
     const [closeDrawer, setCloseDrawer] = useState(false)
-    const [hiddenFixa, setHiddenFixa] = useState(true)
 
     const doCloseDrawer = () => {
         setCloseDrawer(true)
@@ -29,18 +28,11 @@ export const NavbarFixa = (props) => {
         }
     }, [drawerOpen])
 
-    useEffect(() => {
-        setTimeout(() => {
-            setHiddenFixa(false)
-        }, 1500);
-    }, [])
-
     const { t } = useTranslation();
 
   return (
     <>
         <header
-            hidden={hiddenFixa}
             className={'fixed-navbar ' + (!props.isIntersecting ? 'show-fixed-navbar' : 'hide-fixed-navbar')}
         >
             <nav className={"fixed top-5 w-full navigation-fixed text-center "  + (!props.isIntersecting ? 'show-navigation-fixed' : 'hide-fixed-navbar') }>
@@ -87,7 +79,7 @@ export const NavbarFixa = (props) => {
                         <FontAwesomeIcon onClick={() => setDrawerOpen(true)} icon={faBars} className="shadow-icon"/>
                     </p>
                 </div>
-                <div className={"absolute text-2xl navigation-mobile-container " + (drawerOpen ? 'drawer-open' : closeDrawer ? 'drawer-close' : 'drawer')}>
+                <aside className={"absolute text-2xl navigation-mobile-container " + (drawerOpen ? 'drawer-open' : closeDrawer ? 'drawer-close' : 'drawer')}>
                     <LanguageSwitcher />
                     <ul>
                         <li 
@@ -126,7 +118,7 @@ export const NavbarFixa = (props) => {
                     <div className="mt-12 w-full pl-6 pt-4">
                         <RedesSociaisMobile />
                     </div>
-                </div>
+                </aside>
             </nav>
         </header>
     </>

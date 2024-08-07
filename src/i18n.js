@@ -8,8 +8,6 @@ const resources = {
     "en": EN_TRANSLATION
 }
 
-// i18n.changeLanguage() p trocar linguagem
-
 i18n
     .use(initReactI18next)
     .init({

@@ -5,7 +5,7 @@ export const Header = () => {
   const { t } = useTranslation()
   
   return (
-    <>
+    <div className="text-center my-32">
         <h1
             className="text-6xl header-title"
         >
@@ -16,6 +16,6 @@ export const Header = () => {
         </h2>
         
         <LanguageSwitcher />
-    </>
+    </div>
   )
 }
