@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next'
 export const Sobre = () => {
     const idade = Math.abs(new Date(Date.now() - new Date('07-07-1999')).getUTCFullYear() - 1970)
     // const anosDeTrabalho = Math.abs(new Date(Date.now() - new Date('01-10-2018')).getUTCFullYear() - 1970)
-    const linkedinFoto = 'https://media.licdn.com/dms/image/D4D03AQHOPVxaMmr6JA/profile-displayphoto-shrink_800_800/0/1720291928424?e=1728518400&v=beta&t=xHgKDPg_qAdRPX3igp42Sg4XEi-Wnu8H6L8C-vP98fQ'
+    const linkedinFoto = 'src/assets/profile.jpeg'
 
     const { t } = useTranslation();
 
