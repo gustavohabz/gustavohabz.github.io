@@ -2,6 +2,7 @@ import { faAngular, faCss3, faHtml5, faJava, faJs, faPhp, faReact, faVuejs } fro
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import Profile from './../assets/profile.jpeg'
 
 export const Sobre = () => {
     const idade = Math.abs(new Date(Date.now() - new Date('07-07-1999')).getUTCFullYear() - 1970)
@@ -19,7 +20,7 @@ export const Sobre = () => {
                 className="rounded-full object-contain object-center" 
                 width="300"
                 alt="Profile"
-                src={linkedinFoto}
+                src={Profile}
             />
         </div>
         <div className="card rounded-lg p-12">
